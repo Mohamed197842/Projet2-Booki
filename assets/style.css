@@ -264,7 +264,6 @@ form {
 
 .hebergement-populaire {
     display: flex;
-    justify-content: space-between;
     gap: 40px;
     width: 100%;
 }
@@ -275,6 +274,11 @@ form {
     padding: 30px;
     box-sizing: border-box;
     gap: 30px;
+}
+
+.hebergement-populaire .card-subtitle {
+    margin: 0%;
+    color: black;
 }
 
 .card img {
@@ -305,44 +309,36 @@ form {
     width: 65% ;
 }
 
-.hebergements-card {
+.hebergements-cards {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 30px;
-    padding-top: 25px;
+    width: 100%;
+    margin-top: 30px;
 }
 
-.ligne1 {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    width: 811px;
-    height: 207px;
+.hebergements-cards a {
+    width: 30.8%;
 }
 
-.ligne2 {
+.hebergements-cards .card {
     display: flex;
-    flex-direction: row;
-    gap: 20px;
-    width: 811px;
-    height: 207px;
-}
-.hebergements-card img {
-    width: 250px;
-    height: 124px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-}
-.hebergements-card .card {
-    display: flex;
-    background-color: white;
     flex-direction: column;
     border-radius: 20px;
     padding: 5px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    background-color: white;
 }
 
-.hebergements-card .card-content {
+.hebergements-cards img {
+    width: 100%;
+    height: 124px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.hebergements-cards .card-content {
     display: flex;
     flex-direction: column;
     padding-left: 15px;
@@ -350,10 +346,7 @@ form {
 }
 
 
-.hebergements-card .card-subtitle {
-    margin: 0;
-    color: black;
-}
+
 
 .Affichertxt {
     font-size: 18px;
@@ -404,10 +397,6 @@ form {
     margin-bottom: 4px;
 }
 
-.populaires-cards .card-subtitle {
-    margin: 0;
-    color: black;
-}
 
 .populaires-cards .card-rating {
     margin-bottom: 5px;
@@ -537,6 +526,73 @@ footer {
 
 
 }
+
+/*Petit ecran (telephones,plus petit ou egal a 764px ) */
+
+@media screen and (max-width: 764px) {
+
+    .main-container {
+        padding: 0;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+        gap: 20px;
+    }
+
+    .navbar {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .button {
+        width: 100%;
+        justify-content: center;
+        gap: 0%;
+    }
+
+    .btn1 {
+        width: 50%;
+    }
+
+    .btn2 {
+        width: 50%;
+    }
+
+    .section-info {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .search-btn {
+        display: none;
+    }
+
+    .search-btn-phone {
+        display: flex;
+    }
+
+    .filter-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 30px;
+    }
+
+    .hebergement-populaire {
+        width: 100%;
+    }
+
+}
+
+
+
+
+
+
+
+
 
 /* Petit ecran (telephones,plus petit ou egal a 375px ) 
 
