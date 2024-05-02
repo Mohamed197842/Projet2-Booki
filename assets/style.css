@@ -55,33 +55,43 @@ header {
 }
 
 .btn1 {
-    border-top: solid 2px #0065fc;
-    color: #0065fc;
     height: 35px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+}
+
+.btn1:hover {
+    border-top: solid 3px;
+    border-color: #0065fc;
 }
 
 .btn1 .navlinks {
-    color: #0065fc;
     font-weight: 400;
     font-size: 16px;
+    color: black;
+    margin-top: 18px;
+}
+
+.btn2 .navlinks {
+    font-weight: 400;
+    font-size: 16px;
+    color: black;
+    margin-top: 18px;
+}
+
+.navlinks:hover {
+    color: #0065fc;
 }
 
 .btn2 {
     height: 35px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 5px;
 }
 
-.btn2 .navlinks {
-    color: black;
-    font-weight: 400;
-    font-size: 16px;
+.btn2:hover{
+    border-top: solid 3px;
+    border-color: #0065fc;
 }
+
 
 
 
@@ -567,11 +577,38 @@ footer {
 
     .btn1 {
         width: 50%;
+        justify-content: center;
+        align-items: center;
+        border-bottom: solid 3px;
+        border-color: #F2F2F2;
+        padding-bottom: 20px;
     }
 
     .btn2 {
         width: 50%;
+        justify-content: center;
+        align-items: center;
+        border-bottom: solid 3px;
+        border-color: #F2F2F2;
+        padding-bottom: 20px;
+
     }
+
+    .btn1:hover {
+        border-bottom: solid 3px;
+        border-top: none;
+        border-color: #0065fc;
+        padding-bottom: 20px;
+    }
+    
+    .btn2:hover {
+        border-bottom: solid 3px;
+        border-top: none;
+        border-color: #0065fc;
+        padding-bottom: 20px;
+    }
+
+    
 
     .section-info {
         padding-left: 20px;
@@ -622,9 +659,6 @@ footer {
     }
 
 }
-
-
-
 
 
 
