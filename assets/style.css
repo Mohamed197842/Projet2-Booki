@@ -84,6 +84,7 @@ header {
 }
 
 
+
 /* Style de la partie info */
 
 .section-info {
@@ -235,6 +236,15 @@ form {
     font-weight: 900;
 
 }
+
+.filtre-economique:hover,
+.filtre-familial:hover,
+.filtre-nos-pepites:hover,
+.filtre-romantique:hover {
+    background-color: #deebff;
+}
+
+
 
 /* Style Info bar */
 
