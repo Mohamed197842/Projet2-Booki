@@ -407,23 +407,34 @@ form {
 
 .activité {
     width: 100%;
-    gap: 30px;
-    padding: 30px;
-    margin-top: 30px;
-    margin-bottom: 30px;
     display: flex;
     flex-direction: column;
+    gap: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .activite-cards {
     display: flex;
     flex-direction: row;
+    padding-left: 30px;
+    padding-right: 30px;
     gap: 30px;
 }
 
+.activite-cards a {
+    width: 23%;
+}
+
+.activite-cards img {
+    
+    width: 100%;
+    height: 363px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
 .activite-cards .card {
-    width: 297.5px;
-    height: 439px;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -432,15 +443,8 @@ form {
 
 }
 
-.activite-cards img {
-    width: 297.5px;
-    height: 363px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-}
-
 .activite-cards .card-content {
-    padding: 20px;
+    padding: 15px;
 }
 
 /* Style du footer */
@@ -516,11 +520,9 @@ footer {
 }
 
 .activite-cards .card {
-    width: 193.5px;
     height: 270px;
 }
 .activite-cards img {
-    width: 193.5px;
     height: 172px;
 }
 
