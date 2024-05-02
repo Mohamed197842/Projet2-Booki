@@ -434,6 +434,10 @@ form {
     margin-bottom: 30px;
 }
 
+.activite-title {
+    padding-left: 30px;
+}
+
 .activite-cards {
     display: flex;
     flex-direction: row;
@@ -656,6 +660,27 @@ footer {
 
     .activite-cards {
         flex-wrap: wrap;
+    }
+
+}
+
+
+@media screen and (max-width: 574px) {
+
+    .hebergements-cards a{
+        width: 100%;
+    }
+
+    .populaires-cards{
+        flex-direction: column;
+    }
+
+    .activite-cards {
+        flex-direction: column;
+    }
+    
+    .activite-cards a {
+        width: 100%;
     }
 
 }
