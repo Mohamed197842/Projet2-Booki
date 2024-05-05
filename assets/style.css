@@ -186,6 +186,7 @@ form {
 .zonefiltres {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap ;
     gap: 15px;
 }
 
@@ -195,51 +196,14 @@ form {
     font-weight: 700;
 }
 
-.filtre-economique {
-    height: 50px;
-    width: 173px;
+.filtre {
     border: 2px solid #D9D9D9;
+    padding: 15px;
     border-radius:25px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-
-}
-
-.filtre-romantique{
-    height: 50px;
-    width: 173px;
-    border: 2px solid #D9D9D9;
-    border-radius:25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 10px;
 }
 
-.filtre-familial{
-    height: 50px;
-    width: 134px;
-    border: 2px solid #D9D9D9;
-    border-radius:25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-
-.filtre-nos-pepites{
-    height: 50px;
-    width: 173px;
-    border: 2px solid #D9D9D9;
-    border-radius:25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-
-}
 
 .filter-icon i {
     color: #0065fc;
@@ -247,10 +211,7 @@ form {
 
 }
 
-.filtre-economique:hover,
-.filtre-familial:hover,
-.filtre-nos-pepites:hover,
-.filtre-romantique:hover {
+.filtre:hover {
     background-color: #deebff;
 }
 
@@ -503,6 +464,11 @@ footer {
 /* Medium devices (tablets, less/equal than 1024px) */
 @media screen and (max-width: 1024px) {
 
+.filter-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 30px;
+}
 
 .hebergement-populaire {
     flex-direction: column;
@@ -562,6 +528,12 @@ footer {
 
 
 }
+@media screen and (max-width: 963px) {
+    .hebergements-cards a {
+        width: 48%;
+    }
+}
+
 @media screen and (max-width: 1410px) {
 
     .activite-cards {
@@ -640,6 +612,7 @@ footer {
         margin-top: 30px;
         padding-left: 20px;
         padding-right: 20px;
+        gap: 30px;
     }
     
     .search-btn {
@@ -654,7 +627,13 @@ footer {
         flex-direction: column;
         align-items: flex-start;
         margin-bottom: 30px;
+        width: 100%;
     }
+
+    .filtre {
+        width: 43%;
+    }
+
 
     .hebergement-populaire {
         width: 100%;
@@ -697,7 +676,7 @@ footer {
     .hebergements-cards a{
         width: 100%;
     }
-
+ 
     .populaires-cards{
         flex-direction: column;
     }
