@@ -476,7 +476,7 @@ footer {
     }
 
     .activite-cards a {
-        width: 30.8%;
+        width: 22%;
     }
 
 }
@@ -569,9 +569,9 @@ footer {
 }
 
 
-/*Petit ecran (telephones,plus petit ou egal a 764px ) */
+/*Petit ecran (telephones,plus petit ou egal a 768px ) */
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 768px) {
 
     .main-container {
         padding: 0;
@@ -758,3 +758,12 @@ footer {
 }
   
 } 
+
+@media screen and (max-width: 320px) {
+    .search-input {
+        width: 160px;
+    }
+    .search {
+        margin-left: 10px;
+    }
+}
