@@ -461,6 +461,26 @@ footer {
 
 /* Version responsive (media queries) */
 
+@media screen and (max-width: 1422px) and (min-width: 1024px){
+    .hebergements-cards a {
+        width: 47%;
+    }
+
+}
+
+
+@media screen and (max-width: 1410px) {
+
+    .activite-cards {
+        flex-wrap: wrap;
+    }
+
+    .activite-cards a {
+        width: 30.8%;
+    }
+
+}
+
 /* Medium devices (tablets, less/equal than 1024px) */
 @media screen and (max-width: 1024px) {
 
@@ -478,7 +498,7 @@ footer {
     width: 100%;
 }
 
-.hebergements-card .card {
+.hebergements-card a {
     width: 30.8%
 }
 
@@ -522,26 +542,28 @@ footer {
 }
 
 .activite-cards a {
-    width: 15%;
+    width: 25%;
 }
 
 
 
 }
+
+
+
 @media screen and (max-width: 963px) {
     .hebergements-cards a {
-        width: 48%;
+        width: 47%;
     }
 }
 
-@media screen and (max-width: 1410px) {
-
+@media screen and (max-width: 920px){
     .activite-cards {
         flex-wrap: wrap;
     }
 
     .activite-cards a {
-        width: 30.8%;
+        width: 30%;
     }
 
 }
@@ -549,7 +571,7 @@ footer {
 
 /*Petit ecran (telephones,plus petit ou egal a 764px ) */
 
-@media screen and (max-width: 764px) {
+@media screen and (max-width: 780px) {
 
     .main-container {
         padding: 0;
@@ -632,6 +654,11 @@ footer {
 
     .filtre {
         width: 43%;
+        justify-content: center;
+    }
+
+    .info-bar {
+        margin-top: 65px;
     }
 
 
@@ -670,6 +697,12 @@ footer {
 
 }
 
+@media screen and (max-width: 607px) {
+    .filtre {
+        width: 38%;
+    }
+}
+
 
 @media screen and (max-width: 574px) {
 
@@ -698,64 +731,30 @@ footer {
 
 
 
-
-
-
-/* Petit ecran (telephones,plus petit ou egal a 375px ) 
-
-@media screen and (max-width: 375px) {
-
-    .main-container {
-        padding: 0;
-    }
-
-    header {
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 30px;
-    }
-
-    .navbar {
-        width: 100%
-    }
-
-    .button {
-        width: 100%;
-        gap: 0;
-    }
-
-    .btn1 {
-        border-bottom: solid 2px #0065fc;
-        border-top: none;
-        width: 50%;
-    }
-
-    .btn2 {
-        border-bottom: solid 2px #F2F2F2;
-        width: 50%;
+@media screen and (max-width: 445px){
+    .filtre {
+        width: 37%;
     }
 
     .section-info {
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 10px;
     }
-
-    .search-btn {
-        display: none;
-    }
-
-    .search-btn-phone {
-        display: flex;
-    }
-
-    .search-input {
-        width: 236px;
-    }
-
-    .filter-bar {
-        flex-direction: column;
-    }
+}
 
 
+/* Petit ecran (telephones,plus petit ou egal a 375px ) */
+
+@media screen and (max-width: 365px) {
+
+.filter-bar {
+    margin-bottom: 160px;
+}
+.zonefiltres {
+    gap: 10px;
+}
+
+.filtre {
+    width: 80%;
+}
   
-}  */
+} 
