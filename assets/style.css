@@ -459,6 +459,7 @@ footer {
     color: black;
 }
 
+
 /* Version responsive (media queries) */
 
 @media screen and (max-width: 1422px) and (min-width: 1024px){
@@ -481,7 +482,10 @@ footer {
 
 }
 
-/* Medium devices (tablets, less/equal than 1024px) */
+
+
+/* Medium devices (less/equal than 1024px) */
+
 @media screen and (max-width: 1024px) {
 
 .filter-bar {
@@ -569,7 +573,7 @@ footer {
 }
 
 
-/*Petit ecran (telephones,plus petit ou egal a 768px ) */
+/*Ecran de tablettes (tablettes,plus petit ou egal a 768px ) */
 
 @media screen and (max-width: 768px) {
 
@@ -742,7 +746,7 @@ footer {
 }
 
 
-/* Petit ecran (telephones,plus petit ou egal a 375px ) */
+/* Petit ecran (telephones,plus petit ou egal a 365px ) */
 
 @media screen and (max-width: 365px) {
 
