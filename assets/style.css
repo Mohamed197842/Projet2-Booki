@@ -462,7 +462,7 @@ footer {
 
 /* Version responsive (media queries) */
 
-@media screen and (max-width: 1422px) and (min-width: 1024px){
+@media screen and (max-width: 1422px) and (min-width: 1025px){
     .hebergements-cards a {
         width: 47%;
     }
@@ -556,18 +556,27 @@ footer {
 
 
 @media screen and (max-width: 963px) {
-    .hebergements-cards a {
-        width: 47%;
+    .hebergements-cards  {
+        gap: 25px;
     }
 }
 
 @media screen and (max-width: 920px){
+
     .activite-cards {
         flex-wrap: wrap;
     }
 
     .activite-cards a {
         width: 30%;
+    }
+
+    .hebergements-cards {
+        gap: 30px;
+    }
+
+    .hebergements-cards a {
+        width: 47%;
     }
 
 }
