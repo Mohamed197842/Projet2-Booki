@@ -191,8 +191,6 @@ form {
     background-color: #deebff;
 }
 
-
-
 /* Style Info bar */
 
 .info-bar {
@@ -256,7 +254,6 @@ form {
     margin-top: 10px;
     margin-bottom: 4px;
 }
-
 /* Hebergement*/
 
 .hebergement {
@@ -294,8 +291,6 @@ form {
     font-weight: 700;
     margin-top: 50px;
 }
-
-
 /* Populaire */
 
 .populaires {
@@ -363,16 +358,17 @@ form {
 }
 
 .activite-cards img {
-    height: 363px;
+    height: 355px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
-
-
 .activite-cards .card-content {
-    padding: 15px;
+    height: 55px;
+    justify-content: center;
+    padding-left: 10px;
+    padding-bottom: 10px;
 }
-
+ 
 /* Style du footer */
 
 footer {
@@ -406,18 +402,6 @@ footer {
 
 }
 
-
-@media screen and (max-width: 1410px) {
-
-    .activite-cards {
-        flex-wrap: wrap;
-    }
-
-    .activite-cards a {
-        width: 30%;
-    }
-
-}
 @media screen and (max-width: 1122px) {
     .activite-cards .card {
         height: 270px;
@@ -429,7 +413,7 @@ footer {
     
     
     .activite-cards img {
-        height: 172px;
+        height: 190px;
     }
     
     .activite-cards a {
@@ -437,10 +421,7 @@ footer {
     }
     
 }
-
-
-
-/* Medium devices (less/equal than 1024px) */
+/* (less/equal than 1024px) */
 
 @media screen and (max-width: 1024px) {
 
@@ -520,8 +501,22 @@ footer {
     }
 }
 
+@media screen and (max-width: 772px){
+    .activite-cards {
+        flex-wrap: wrap;
+    }
 
-/*Ecran de tablettes (tablettes,plus petit ou egal a 768px ) */
+    .activite-cards a {
+        width: 47%;
+    }
+
+    .activite-cards img {
+        height: 200px;
+    }
+}
+
+
+/*Ecran téléphone (plus petit ou egal a 768px ) */
 
 @media screen and (max-width: 768px) {
 
@@ -633,18 +628,7 @@ footer {
         width: 48.5%;
     }
 
-    .activite-cards {
-        flex-wrap: wrap;
-    }
-
-    .activite-cards a {
-        width: 47%;
-    }
-
-    .activite-cards img {
-        height: 200px;
-    }
-
+    
 }
 
 @media screen and (max-width: 647px) {
@@ -692,7 +676,7 @@ footer {
         padding-left: 10px;
     }
 }
-/* Petit ecran (telephones,plus petit ou egal a 365px ) */
+/* (plus petit ou egal a 365px ) */
 @media screen and (max-width: 405px) {
 
 .filter-bar {
