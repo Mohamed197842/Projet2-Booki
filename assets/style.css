@@ -182,7 +182,7 @@ form {
 }
 
 
-.filter-icon i {
+.filtre i {
     color: #0065fc;
     font-weight: 900;
 
@@ -382,11 +382,10 @@ footer {
     gap: 30px;
 }
 .zone {
-    width: 446.67px;
-    height: 163px;
+  width: 100%;
+  height: 163px;
 }
 .zonetxt  {
-    padding-left: 0%;
     gap: 15px;
 }
 .zonetxt a {
@@ -560,8 +559,8 @@ footer {
 
     .section-info {
         margin-top: 30px;
-        padding-left: 20px;
-        padding-right: 20px;
+        width: 90%;
+        padding: 0 5%;
         gap: 30px;
     }
 
@@ -630,17 +629,19 @@ footer {
 
     
 }
-
-@media screen and (max-width: 647px) {
+@media screen and (max-width: 717px){
     .filtre {
         width: 38%;
     }
+}
+
+@media screen and (max-width: 647px) {
 
     .search-input {
         width:75%;
     }
 }
-
+ 
 
 @media screen and (max-width: 574px) {
 
@@ -667,30 +668,23 @@ footer {
 
 }
 
-@media screen and (max-width: 445px){
-    .filtre {
-        width: 37%;
-    }
 
-    .section-info {
-        padding-left: 10px;
+
+@media screen and (max-width: 445px){
+    .filter-bar {
+        margin-bottom: 160px;
     }
+    .zonefiltres {
+        gap: 10px;
+    }
+    
+    .filtre {
+        width: 80%;
+    }
+    
 }
 /* (plus petit ou egal a 365px ) */
-@media screen and (max-width: 405px) {
 
-.filter-bar {
-    margin-bottom: 160px;
-}
-.zonefiltres {
-    gap: 10px;
-}
-
-.filtre {
-    width: 80%;
-}
-  
-} 
 @media screen and (max-width: 320px) {
     .search-input {
         width: 160px;
