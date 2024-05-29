@@ -111,8 +111,9 @@ form {
     font-weight: 700;
 }
 
-.search-btn {
-    width: 132px;
+.search-btn , .search-btn-phone {
+    padding-left: 10px;
+    padding-right: 10px;
     height: 49px;
     border: 1px;
     border-top-right-radius: 15px;
@@ -127,17 +128,9 @@ form {
 }
 
 .search-btn-phone{
-    width:  49px;
-    height: 49px;
-    border: 1px;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    background-color: #0065fc;
+    padding-left: 15px;
+    padding-right: 15px;
     display: none;
-    justify-content: center;
-    align-items: center;
-    font-size: 18px;
-    font-weight: 700;
 }
 
 .search-btn-phone i {
