@@ -577,8 +577,7 @@ footer {
     }
 
     .zonefiltres {
-        margin-left: 20px;
-        margin-right: 20px;
+        justify-content: center;
     }
 
     .filtre {
@@ -622,6 +621,7 @@ footer {
     .filtre {
         width: 38%;
     }
+
 }
 
 @media screen and (max-width: 647px) {
@@ -678,7 +678,9 @@ footer {
     .search-input {
         width: 160px;
     }
-    .search {
-        margin-left: 10px;
+    #formulaireRecherche{
+        justify-content: center;
     }
+    
+  
 }
